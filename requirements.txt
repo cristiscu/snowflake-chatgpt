@@ -3,3 +3,5 @@ streamlit
 openai
 plotly
 pandas
+llama-index
+pypdf
