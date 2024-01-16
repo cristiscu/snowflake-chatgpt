@@ -1,7 +1,9 @@
-snowflake-snowpark-python==1.10.0
+snowflake-snowpark-python[pandas]==1.10.0
 streamlit
 openai
 plotly
-pandas
 llama-index
 pypdf
+langchain-openai
+snowflake-sqlalchemy
+jupyter
