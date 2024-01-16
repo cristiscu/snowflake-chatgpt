@@ -1,2 +1,3 @@
-# snowflake-chatgpt
-Experiments for my Udemy course about Snowflake using ChatGPT
+# Snowflake with ChatGPT
+
+Experiments for my Udemy course about Snowflake using ChatGPT.

@@ -1,0 +1,5 @@
+snowflake-snowpark-python==1.10.0
+streamlit
+openai
+plotly
+pandas
