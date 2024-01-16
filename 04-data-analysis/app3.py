@@ -1,7 +1,7 @@
 import streamlit as st
 import deps
 
-st.title("Data Analysis Inspector")
+st.title("Data Analysis Inspector (Chat)")
 
 if "messages" not in st.session_state:
     st.session_state.messages = [{"role": "system", "content": deps.get_system_prompt()}]
