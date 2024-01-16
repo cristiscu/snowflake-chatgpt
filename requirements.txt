@@ -1,9 +1,18 @@
-snowflake-snowpark-python[pandas]==1.10.0
-streamlit
+# to connect to ChatGPT
 openai
+
+# to connect to Snowflake
+snowflake-snowpark-python[pandas]==1.10.0
+
+# to build Streamlit apps
+streamlit
 plotly
+
+# for LlamaIndex demo
 llama-index
 pypdf
+
+# for LongChain demo
 langchain-openai
 snowflake-sqlalchemy
 jupyter
