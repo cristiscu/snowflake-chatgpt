@@ -70,14 +70,14 @@ No code available here, as all tests will be online, in the ChatGPT playground, 
 * **setup.sql** - creating an External Access Integration for OpenAI.
 * **app.py** - deployed Streamlit App w/ simple ChatGPT Q&A interface, in chat mode.
 
-## App #8: ChatGPT with RAG/LlamaIndex on Personal Documents
+## App #8: ChatGPT with LlamaIndex on Personal Documents
 
 * **app.py** - ChatGPT agent for custom content - create index and query.
 * **spool/Streamlit-for-Snowflake.pdf** - input file to parse. 
 * **spool-empty/empty.pdf** - input empty file to parse. 
 * **kb/** - output directory, where the LlamaIndex will be generated.
 
-## App #9: ChatGPT SQL Agent with LangChain
+## App #9: ChatGPT SQL Generator with LangChain
 
 * **app.ipynb** - Jupyter Notebook to run from within VSCode.
 * **app1.py** - implementation as a local Streamlit web app.

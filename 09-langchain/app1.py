@@ -29,7 +29,7 @@ def getSession():
     return session, db, chain
 
 
-st.title("LangChain Demo App")
+st.title("LangChain SQL Generator")
 st.write("Returns and runs queries from questions in natural language.")
 
 session, db, chain = getSession()

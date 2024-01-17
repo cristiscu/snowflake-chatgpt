@@ -58,7 +58,7 @@ def getSession(openai_key, pars):
     return session, db, chain
 
 
-st.title("Deployed LangChain Demo App")
+st.title("LangChain SQL Generator")
 st.write("Returns and runs queries from questions in natural language.")
 
 openai_key, pars = getParams()
