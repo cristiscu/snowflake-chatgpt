@@ -38,4 +38,5 @@ def handler(prompt):
     return r["choices"][0]["message"]["content"]
 $$;
 
-select 'Chile' as country, openai('President of ' || country) as answer;
+select 'Chile' as country,
+    openai_db.public.openai('President of ' || country) as answer;
