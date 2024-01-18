@@ -14,7 +14,7 @@ def getSession():
     return Session.builder.configs(pars).create()
 
 def getChatResponse(prompt):
-    client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+    client = OpenAI(,api_key=os.environ["OPENAI_API_KEY"])
     r = client.chat.completions.create(
         model="gpt-4-1106-preview",
         messages=[{"role": "user", "content": prompt}])
