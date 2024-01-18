@@ -14,7 +14,7 @@ def runQuery(sql):
     st.dataframe(conn.query(sql))
 
 
-st.header("Snowflake Metadata Inspector")
+st.header("Snowflake Q&A Metadata Inspector")
 
 label = "Ask a question about the SNOWFLAKE_SAMPLE_DATA database and press Enter:"
 if prompt := st.text_input(label=label):

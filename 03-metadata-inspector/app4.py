@@ -21,12 +21,14 @@ def runQuery(sql):
     return results
 
 
-st.title("Snowflake Metadata Inspector")
+st.title("Snowflake Chat Metadata Inspector")
 
 first = "messages" not in st.session_state
 if first:
     st.session_state.messages = [{"role": "system", "content": 
-        ("You must respond with a Snowflake SQL query using the ACCOUNT_USAGE schema.")}]
+        ("Respond with one single Snowflake query that returns"
+        + " metadata from the SNOWFLAKE_SAMPLE_DATA database"
+        + f" using the INFORMATION_SCHEMA.")}]
 
 if prompt := st.chat_input(placeholder="Ask a question about Snowflake metadata"):
     st.session_state.messages.append({"role": "user", "content": prompt})

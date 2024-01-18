@@ -14,7 +14,7 @@ def runQuery(sql):
     st.dataframe(conn.query(sql))
 
 
-st.header("Snowflake Metadata Inspector")
+st.header("Snowflake Q&A Metadata Inspector")
 st.write("Ask questions about the SNOWFLAKE_SAMPLE_DATA database...")
 
 if prompt := st.sidebar.text_area(label="Ask question here:"):
@@ -26,7 +26,8 @@ if prompt := st.sidebar.text_area(label="Ask question here:"):
     tabTable, tabText = st.tabs(["Table", "Text"])
     tabText.write(response)
 
-    if sql_match := re.search(r"```sql\n(.*)\n```", response, re.DOTALL):
-        runQuery(sql_match.group(1))
-    else:
-        tabTable.warning("Nothing returned!")
+    with tabTable:
+        if sql_match := re.search(r"```sql\n(.*)\n```", response, re.DOTALL):
+            runQuery(sql_match.group(1))
+        else:
+            st.warning("Nothing returned!")
