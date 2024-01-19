@@ -18,6 +18,7 @@ llama-index
 pypdf
 
 # for LongChain demo
+langchain
 langchain-openai
 snowflake-sqlalchemy
 jupyter
