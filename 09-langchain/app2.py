@@ -16,17 +16,17 @@ def getParams():
         "warehouse": "COMPUTE_WH",
         "role": "ACCOUNTADMIN"
     }
-    if os.path.isfile("./.streamlit/secrets.toml"):
-        openai_key = st.secrets["OPENAI_API_KEY"]
+    #if os.path.isfile("./.streamlit/secrets.toml"):
+    #    openai_key = st.secrets["OPENAI_API_KEY"]
 
-        section = st.secrets[f"connections_snowflake"]
-        pars["account"] = section["account"]
-        pars["user"] = section["user"]
-        pars["password"] = section["password"]
-        pars["database"] = section["database"]
-        pars["schema"] = section["schema"]
-        pars["warehouse"] = section["warehouse"]
-        pars["role"] = section["role"]
+    #    section = st.secrets[f"connections_snowflake"]
+    #    pars["account"] = section["account"]
+    #    pars["user"] = section["user"]
+    #    pars["password"] = section["password"]
+    #    pars["database"] = section["database"]
+    #    pars["schema"] = section["schema"]
+    #    pars["warehouse"] = section["warehouse"]
+    #    pars["role"] = section["role"]
 
     must_connect = (len(openai_key) == 0)
     if must_connect: st.warning("Please connect first.")
