@@ -9,7 +9,7 @@ def getQueryEngine():
     client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
     # create and save index (as knowledge base)
-    reader = SimpleDirectoryReader("./spool")
+    reader = SimpleDirectoryReader("./spool-empty")
     documents = reader.load_data()
     context = ServiceContext.from_defaults(llm=client)
     index = TreeIndex.from_documents(documents, service_context=context)
@@ -30,7 +30,7 @@ if "messages" not in st.session_state:
     st.session_state.messages = [{"role": "system",
         "content": ("Your purpose is to answer questions about specific documents only. "
         "Please answer the user's questions based on what you know about the document. "
-        "If the question is outside scope of the document, please politely decline. "
+        "If the question is outside the scope of the document, please politely decline. "
         "If you don't know the answer, say `I don't know`.")}]
 
 for message in st.session_state.messages:

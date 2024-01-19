@@ -59,3 +59,10 @@ def getResults():
         response += (delta.choices[0].delta.content or "")
         resp_container.markdown(response)
     getDataframe(response)
+
+
+if __name__ == "__main__":
+    content = get_system_prompt()
+    st.markdown(content)
+    with open("data/system-prompt.md", "w") as f:
+        f.write(content)
