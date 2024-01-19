@@ -19,6 +19,7 @@ pypdf
 
 # for LongChain demo
 langchain
+langchain-community
 langchain-openai
 snowflake-sqlalchemy
 jupyter
