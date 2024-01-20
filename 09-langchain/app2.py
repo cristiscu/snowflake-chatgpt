@@ -18,7 +18,6 @@ def getParams():
     }
     #if os.path.isfile("./.streamlit/secrets.toml"):
     #    openai_key = st.secrets["OPENAI_API_KEY"]
-
     #    section = st.secrets[f"connections_snowflake"]
     #    pars["account"] = section["account"]
     #    pars["user"] = section["user"]

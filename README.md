@@ -67,7 +67,12 @@ pip install -r requirements.txt
 
 ## App #5: Instant Charts with the Advanced Data Analysis Plugin
 
-No code available here, as all tests will be online, in the ChatGPT playground, with the Plus paid plan. We'll explore uploading a full CSV file and generating instant graphs and info with the Advanced Data Analysis plugin.
+Most tests will be online, in the ChatGPT playground, with the ChatGPT Plus paid plan. We'll explore uploading a full CSV file and generating instant graphs and info with the Advanced Data Analysis plugin.
+
+* **data/Popular_Baby_Names.csv** - free public dataset for EDA.
+* **data/Iris.csv** - data science popular dataset, for cluster analysis
+* **data/Bank branch openings and closures.csv** - from the public financial__economic_essentials.cybersyn Marketplace dataset.
+* **setup.sql** - to generate the previous downloaded file from Snowflake.
 
 ## App #6: Generate a Usage Monitoring Dashboard for Snowflake Account
 
@@ -97,4 +102,5 @@ No code available here, as all tests will be online, in the ChatGPT playground, 
 
 * **app1.py** - implementation as a local Streamlit web app.
 * **app2.py** - implementation as a Streamlit App.
+* **setup.sql** - complex query to analyze.
 
