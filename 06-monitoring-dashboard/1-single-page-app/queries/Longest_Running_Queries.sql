@@ -1,3 +1,4 @@
+-- Longest Running Queries
 SELECT 
     DATE_TRUNC('hour', start_time) AS hour_window, 
     AVG(EXECUTION_TIME) AS avg_execution_time_ms
