@@ -14,6 +14,7 @@ CREATE OR REPLACE EXTERNAL ACCESS INTEGRATION openai_eai
    ALLOWED_AUTHENTICATION_SECRETS = (openai_key) 
    ENABLED = TRUE;
 
+-- create the actual function calling ChatGPT
 CREATE OR REPLACE function openai(prompt text)
   RETURNS text
   LANGUAGE PYTHON
