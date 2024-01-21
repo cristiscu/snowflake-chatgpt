@@ -14,7 +14,6 @@ CREATE OR REPLACE EXTERNAL ACCESS INTEGRATION openai_eai
    ALLOWED_AUTHENTICATION_SECRETS = (openai_key) 
    ENABLED = TRUE;
 
--- create the actual function calling ChatGPT
 CREATE OR REPLACE function openai(prompt text)
   RETURNS text
   LANGUAGE PYTHON
@@ -38,6 +37,3 @@ def handler(prompt):
     ).json()
     return r["choices"][0]["message"]["content"]
 $$;
-
-select 'Chile' as country,
-    openai_db.public.openai('President of ' || country) as answer;
