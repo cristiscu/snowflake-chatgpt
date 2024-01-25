@@ -1,7 +1,12 @@
-# Snowflake with ChatGPT
+# Top 10 Snowflake Integrations with ChatGPT
 
-Experiments for my Udemy course about Snowflake using ChatGPT --> **subscribe here for a very low price**:
-[![Subscribe]([https://www.udemy.com/course/snowflake-with-chatgpt/?couponCode=LOWEST-PRICE](https://miro.medium.com/v2/resize:fit:828/format:webp/1*_g38pnVGd1BYWikJoekXeA.png))](https://cristian-70480.medium.com/top-10-snowflake-integrations-with-chatgpt-e56ff4c7aa91)
+Experiments for my Udemy course [**Top 10 Snowflake Integrations with ChatGPT - 2024 Hands-On!**](https://www.udemy.com/course/snowflake-with-chatgpt/?couponCode=LOWEST-PRICE). Refer to individual sections for local documentation.
+
+[![Udemy Course](.images/udemy-course.png)](https://www.udemy.com/course/snowflake-with-chatgpt/?couponCode=LOWEST-PRICE)
+
+## My Promo Video
+
+[![Watch Here](.images/youtube-promo.png)](https://youtu.be/rbDJ30O8198)
 
 ## App #1: Configure ChatGPT as a Coding Assistant for Snowflake in VSCode
 
@@ -104,7 +109,3 @@ Most tests will be online, in the ChatGPT playground, with the ChatGPT Plus paid
 * **app1.py** - implementation as a local Streamlit web app.
 * **app2.py** - implementation as a Streamlit App.
 * **setup.sql** - complex query to analyze.
-
-## Promo Clip
-
-[youtube video](https://youtu.be/rbDJ30O8198)
