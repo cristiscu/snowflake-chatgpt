@@ -1,6 +1,6 @@
 # Top 10 Snowflake Integrations with ChatGPT
 
-Experiments for my Udemy course [**Top 10 Snowflake Integrations with ChatGPT - 2024 Hands-On!**](https://www.udemy.com/course/snowflake-with-chatgpt/?couponCode=LOWEST-PRICE). Refer to individual sections for local documentation.
+Experiments for my Udemy course [**Top 10 Snowflake Integrations with ChatGPT - 2024 Hands-On!**](https://www.udemy.com/course/snowflake-with-chatgpt/?couponCode=LOWEST-PRICE) - get it here for **the LOWEST-PRICE**! Refer to individual sections for local documentation.
 
 [![Udemy Course](.images/udemy-course.png)](https://www.udemy.com/course/snowflake-with-chatgpt/?couponCode=LOWEST-PRICE)
 
