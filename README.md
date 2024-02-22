@@ -104,6 +104,24 @@ Most tests will be online, in the ChatGPT playground, with the ChatGPT Plus paid
 * **app1.py** - implementation as a local Streamlit web app.
 * **app2.py** - implementation as a web app to deploy in the Streamlit Community Cloud.
 
+To deploy as a local web app, in the same subfolder you must create a *.streamlit* subfolder with a **secrets.toml** file with the following content (replace all sensitive data with yours):
+
+```
+# .streamlit/secrets.toml
+
+OPENAI_API_KEY = "sk-Z5I10I...kFJ8kftKnnEPTKLvK"
+
+[connections_snowflake]
+account = "<your_snowflake_account>"
+user = "<your_user_name>"
+password = "<your password>"
+database = "SNOWFLAKE_SAMPLE_DATA"
+schema = "TPCH_SF1"
+warehouse = "COMPUTE_WH"
+role = "ACCOUNTADMIN"
+```
+Make sure the section says **[connections_snowflake]** (with an underscore _ separator), not **[connections.snowflake]**.
+
 ## App #10: Snowflake Query Analyzer and Optimizer
 
 * **app1.py** - implementation as a local Streamlit web app.
