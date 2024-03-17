@@ -122,6 +122,8 @@ role = "ACCOUNTADMIN"
 ```
 Make sure the section says **[connections_snowflake]** (with an underscore _ separator), not **[connections.snowflake]**.
 
+The full procedure is [described in detail here](./secrets-toml.md).
+
 ## App #10: Snowflake Query Analyzer and Optimizer
 
 * **app1.py** - implementation as a local Streamlit web app.
