@@ -1,8 +1,8 @@
 import os
 import streamlit as st
 from llama_index.llms.openai import OpenAI
-from llama_index import StorageContext, load_index_from_storage
-from llama_index import ServiceContext, SimpleDirectoryReader, TreeIndex
+from llama_index.core import StorageContext, load_index_from_storage
+from llama_index.core import ServiceContext, SimpleDirectoryReader, TreeIndex
 
 def getQueryEngine():
     # connect to ChatGPT
